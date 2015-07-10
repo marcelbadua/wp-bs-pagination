@@ -1,12 +1,18 @@
 # wp-bs-pagination
 Wordpress Bootstrap Pagination based on http://www.bobz.co/bootstrap-pagination-in-wordpress-theme/
 
-bower install -save https://github.com/marcelbadua/wp-bs-pagination.git
+Install via Bower
 
-require get_stylesheet_directory() . '/bower_components/wp-bs-pagination/wp-bs-pagination.php';
+	bower install -save https://github.com/marcelbadua/wp-bs-pagination.git
 
-  <?php
-    if ( function_exists('vb_pagination') ) {
-  vb_pagination();
-}
-?>
+Include in your function.php
+
+	require get_stylesheet_directory() . '/bower_components/wp-bs-pagination/wp-bs-pagination.php';
+
+Add in your template
+
+  	<?php
+    	if ( function_exists('vb_pagination') ) {
+  		vb_pagination();
+		}
+	?>
