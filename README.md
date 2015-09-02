@@ -1,4 +1,4 @@
-# Bootstrap 3 pagination for Wordpress
+# Bootstrap 3 Pagination for Wordpress
 Add a bootstrap 3 compatible pagination to your page
 
 ##Install
