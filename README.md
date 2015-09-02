@@ -80,6 +80,7 @@ add this to your LESS
 
 ###Source
 Thanks
+
 1. http://www.bobz.co/bootstrap-pagination-in-wordpress-theme/
 2. https://codex.wordpress.org/Function_Reference/paginate_links
 
