@@ -11,7 +11,9 @@ Install via Bower
 
 Include in your `function.php`
 
-	require get_stylesheet_directory() . '/bower_components/wp-bs-pagination/wp-bs-pagination.php';
+```php
+require get_stylesheet_directory() . '/bower_components/wp-bs-pagination/wp-bs-pagination.php';
+```
 
 Add in your template
 
@@ -19,49 +21,55 @@ Add in your template
 if ( function_exists('wp_bs_pagination') ) {
 	wp_bs_pagination();
 }
-?>
 ```
 
 ###Custom WP_Query
 
 add this before your wordpress loop
 
-	if ( get_query_var('paged') ) {
-   		$paged = get_query_var('paged');
-	} else if ( get_query_var('page') ) {
-   		$paged = get_query_var('page');
-	} else {
-   		$paged = 1;
-	}
+```php
+if ( get_query_var('paged') ) {
+   	$paged = get_query_var('paged');
+} else if ( get_query_var('page') ) {
+   	$paged = get_query_var('page');
+} else {
+   	$paged = 1;
+}
+```
 
 on your `new WP_Query` arguments
-	
-	$my_args = array(
-  		'post_type' => 'my-post-type',
-  		'posts_per_page' => 6,
-  		'paged' => $paged
-	);
- 
-	$my_query = new WP_Query( $my_args );
-	
-	if ( function_exists('wp-bs-pagination') ) {
-  		vb_pagination( $my_query );
-	} 
+
+```php	
+$my_args = array(
+  	'post_type' => 'my-post-type',
+  	'posts_per_page' => 6,
+  	'paged' => $paged
+);
+
+$my_query = new WP_Query( $my_args );
+
+if ( function_exists('wp-bs-pagination') ) {
+  	vb_pagination( $my_query );
+}
+```
 
 ###Extra Style
 
 add this to your LESS
 
-	.page-numbers  {
-		&.current {
-			z-index: 2;
-			color: #fff;
-			cursor: default;
-			pointer-events: none;
-			background-color: @brand-primary;
-			border-color: @brand-primary;
-		}	
-	}
+```css
+.page-numbers  {
+	&.current {
+		z-index: 2;
+		color: #fff;
+		cursor: default;
+		pointer-events: none;
+		background-color: @brand-primary;
+		border-color: @brand-primary;
+	}	
+}
+```
+
 ###Source
 
 Thanks
