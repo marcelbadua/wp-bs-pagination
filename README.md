@@ -1,9 +1,13 @@
 # Bootstrap 3 pagination for Wordpress
 Add a bootstrap 3 compatible pagination to your page
 
+##Install
+
 Install via Bower
 
 	bower install -save https://github.com/marcelbadua/wp-bs-pagination.git
+
+##Usage
 
 Include in your function.php
 
@@ -42,6 +46,8 @@ on your 'new WP_Query' arguments
 	if ( function_exists('wp-bs-pagination') ) {
   		vb_pagination( $my_query );
 	} 
+
+###Extra Style
 
 add this to your LESS
 
