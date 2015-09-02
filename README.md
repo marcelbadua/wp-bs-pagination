@@ -1,4 +1,4 @@
-# wp-bs-pagination
+# Bootstrap 3 pagination for Wordpress
 Add a bootstrap 3 compatible pagination to your page
 
 Install via Bower
