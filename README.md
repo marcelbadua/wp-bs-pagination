@@ -5,7 +5,15 @@ Add a bootstrap 3 compatible pagination to your page
 
 Install via Bower
 
-	bower install -save https://github.com/marcelbadua/wp-bs-pagination.git
+```
+bower install -save https://github.com/marcelbadua/wp-bs-pagination.git
+```
+
+Download
+
+```
+https://github.com/marcelbadua/wp-bs-pagination/archive/master.zip
+```
 
 ##Usage
 
