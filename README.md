@@ -19,7 +19,7 @@ Add in your template
 
 ###Custom WP_Query
 
-add this vefore your wordpress loop
+add this before your wordpress loop
 
 	if ( get_query_var('paged') ) {
    		$paged = get_query_var('paged');
@@ -29,9 +29,19 @@ add this vefore your wordpress loop
    		$paged = 1;
 	}
 
-add this to your 'new WP_Query' arguments
+on your 'new WP_Query' arguments
 	
-	'paged' => $paged
+	$my_args = array(
+  		'post_type' => 'my-post-type',
+  		'posts_per_page' => 6,
+  		'paged' => $paged
+	);
+ 
+	$my_query = new WP_Query( $my_args );
+	
+	if ( function_exists('wp-bs-pagination') ) {
+  		vb_pagination( $my_query );
+	} 
 
 add this to your LESS
 
