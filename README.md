@@ -33,6 +33,18 @@ add this to your 'new WP_Query' arguments
 	
 	'paged' => $paged
 
+add this to your LESS
+
+	.page-numbers  {
+		&.current {
+			z-index: 2;
+			color: #fff;
+			cursor: default;
+			pointer-events: none;
+			background-color: @brand-primary;
+			border-color: @brand-primary;
+		}	
+	}
 ###Source
 
 Thanks
