@@ -56,7 +56,7 @@ $my_args = array(
 
 $my_query = new WP_Query( $my_args );
 
-if ( function_exists('wp-pagination') ) {
+if ( function_exists('wp_pagination') ) {
   	wp_pagination( $my_query );
 }
 ```
