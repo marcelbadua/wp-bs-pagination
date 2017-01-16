@@ -1,6 +1,6 @@
 <?php
 
-if ( ! function_exists( 'wp_bs_pagination' ) ) :
+if ( ! function_exists( 'wp_pagination' ) ) :
 
 	function wp_bs_pagination( $query=null ) {
 	
@@ -27,4 +27,4 @@ if ( ! function_exists( 'wp_bs_pagination' ) ) :
 		endif;
 	}
 
-endif; //wp_bs_pagination
+endif; //wp_pagination
