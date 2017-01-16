@@ -1,18 +1,18 @@
-# Bootstrap 3 Pagination for Wordpress
-Add a bootstrap 3 compatible pagination to your page
+# Pagination for Wordpress
+Add a pagination to your page
 
 ##Install
 
 Install via Bower
 
 ```
-bower install -save https://github.com/marcelbadua/wp-bs-pagination.git
+bower install -save https://github.com/marcelbadua/wp-pagination.git
 ```
 
 Download
 
 ```
-https://github.com/marcelbadua/wp-bs-pagination/archive/master.zip
+https://github.com/marcelbadua/wp-pagination/archive/master.zip
 ```
 
 ##Usage
@@ -20,14 +20,14 @@ https://github.com/marcelbadua/wp-bs-pagination/archive/master.zip
 Include in your `function.php`
 
 ```php
-require get_stylesheet_directory() . '/bower_components/wp-bs-pagination/wp-bs-pagination.php';
+require get_stylesheet_directory() . '/bower_components/wp-pagination/wp-pagination.php';
 ```
 
 Add in your template
 
 ```php
-if ( function_exists('wp_bs_pagination') ) {
-	wp_bs_pagination();
+if ( function_exists('wp_pagination') ) {
+	wp_pagination();
 }
 ```
 
@@ -56,27 +56,11 @@ $my_args = array(
 
 $my_query = new WP_Query( $my_args );
 
-if ( function_exists('wp-bs-pagination') ) {
-  	vb_pagination( $my_query );
+if ( function_exists('wp-pagination') ) {
+  	wp_pagination( $my_query );
 }
 ```
 
-###Extra Style
-
-add this to your LESS
-
-```css
-.page-numbers  {
-	&.current {
-		z-index: 2;
-		color: #fff;
-		cursor: default;
-		pointer-events: none;
-		background-color: @brand-primary;
-		border-color: @brand-primary;
-	}	
-}
-```
 
 ###Source
 Thanks
